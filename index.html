@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="shortcut icon" href="ASSETS/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><img src="ASSETS/images/logo.svg" alt="book" id="logo"></div>
+            <div class="right">
+                <div class="fonts-select">
+                    <select name="fonts" id="sel">
+                        <option value="monospace">mono</option>
+                        <option value="sans serif">sans</option>
+                        <option value="cursive">cursive</option>
+                    </select>
+                    <img src="ASSETS/images/icon-arrow-down.svg" alt="">
+                </div>
+                <button id="toggle-dark-mode" aria-label="Toggle Dark Mode">
+                    <img src="ASSETS/images/icon-moon.svg" alt="moon">
+                </button>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form class="input-container">
+            <button type="submit" id="search-button"><img src="ASSETS/images/icon-search.svg" alt=""></button>
+            <input type="text" class="search-word">
+        </form>
+
+        <div class="word-info">
+            <div>
+                <h1 class="word">keyboard</h1>
+                <h3 class="phonetic">/'ki:bɔ:d/</h3>
+            </div>
+            <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+                <g fill="#A445ED" fill-rule="evenodd">
+                    <circle cx="37.5" cy="37.5" r="37.5" opacity=".25"></circle>
+                    <path d="M29 27v21l21-10.5z"></path>
+                </g>
+            </svg>
+        </div>
+
+        <div class=" error">
+            <h3>No Definitions Found</h3>
+            <p>Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again
+                at later time or head to the web instead.</p>
+        </div>
+    </main>
+</body>
+</html>
